@@ -24,7 +24,7 @@ make run
 
 ## License
 
-This sample app is distributed under the terms of the BSD License. See [LICENSE](https://github.com/valmontechno/epsilon-app-template-cpp?tab=License-1-ov-file) for details.
+This sample app is distributed under the terms of the BSD License. See [LICENSE](LICENSE) for details.
 
 ## Trademarks
 
