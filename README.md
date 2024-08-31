@@ -1,32 +1,6 @@
-# Sample C++ app for Epsilon
-
-[![Build](https://github.com/numworks/epsilon-sample-app-cpp/actions/workflows/build.yml/badge.svg)](https://github.com/numworks/epsilon-sample-app-cpp/actions/workflows/build.yml)
-
-<img src="/doc/screenshots.gif?raw=true" alt="Sample C++ app for the NumWorks graphing calculator" width="300" align="right">
+# C++ app template for Epsilon
 
 This is a sample C++ app to use on a [NumWorks calculator](https://www.numworks.com).
-
-```cpp
-
-using namespace EADK;
-
-void eadk_main() {
-  Display::pushRectUniform(
-    Display::Rect(0, 0, 320, 240),
-    Display::Color(0x000000)
-  );
-  while (1) {
-    Keyboard::State kbd = Keyboard::scan();
-    if (kbd.keyDown(Keyboard::Key::OK)) {
-      spaceship.createRockets();
-    }
-    if (kbd.keyDown(Keyboard::Key::Up)) {
-      spaceship.move(0, -Spaceship::k_step);
-    }
-    refreshScene();
-  }
-}
-```
 
 ## Build the app
 
@@ -50,7 +24,7 @@ make run
 
 ## License
 
-This sample app is distributed under the terms of the BSD License. See LICENSE for details.
+This sample app is distributed under the terms of the BSD License. See [LICENSE](LICENSE) for details.
 
 ## Trademarks
 
