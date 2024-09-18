@@ -8,6 +8,6 @@ Download the [latest version](https://github.com/valmontechno/epsilon-app-templa
 
 ## License
 
-This sample app is distributed under the terms of the BSD License. See [LICENSE](LICENSE) for details.
+This sample app is distributed under the terms of the BSD License. See LICENSE for details.
 
 NumWorks is a registered trademark.
