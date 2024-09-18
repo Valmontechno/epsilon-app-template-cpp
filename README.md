@@ -4,7 +4,7 @@ This is a sample C++ app to use on a [NumWorks calculator](https://www.numworks.
 
 ## Installation
 
-Download the [latest version](https://github.com/valmontechno/epsilon-app-template-cpp/releases/latest) and go to the [NumWorks website](https://my.numworks.com/apps) to install this application on your calculator.
+Download the [latest version](../../releases/latest) and go to the [NumWorks website](https://my.numworks.com/apps) to install this application on your calculator.
 
 ## License
 
