@@ -6,6 +6,7 @@ BUILD_DIR = target
 NWLINK = npx --yes -- nwlink@0.0.16
 LINK_GC = 1
 LTO = 1
+DATA_FILE = src/data.bin
 
 define object_for
 $(addprefix $(BUILD_DIR)/,$(addsuffix .o,$(basename $(1))))
@@ -58,6 +59,10 @@ $(addprefix $(BUILD_DIR)/,%.o): %.cpp | $(BUILD_DIR)
 $(BUILD_DIR)/icon.o: src/icon.png
 	@echo "ICON    $<"
 	$(Q) $(NWLINK) png-icon-o $< $@
+
+$(BUILD_DIR)/${NAME}.bin: $(BUILD_DIR)/${NAME}.nwa $(DATA_FILE)
+	@echo "NWLINK     $@"
+	$(Q) $(NWLINK) nwa-bin -d $(DATA_FILE) $< $@
 
 .PRECIOUS: $(BUILD_DIR)
 $(BUILD_DIR):

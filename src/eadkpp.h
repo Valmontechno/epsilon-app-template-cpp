@@ -150,6 +150,18 @@ static inline uint32_t random() {
   return eadk_random();
 }
 
+namespace ExternalData {
+
+static inline const char* data() {
+  return eadk_external_data;
+}
+
+static inline size_t size() {
+  return eadk_external_data_size;
+}
+
+}
+
 }
 
 #endif

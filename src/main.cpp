@@ -8,6 +8,7 @@ extern const uint32_t eadk_api_level __attribute__((section(".rodata.eadk_api_le
 int main() {
   Display::pushRectUniform(Screen::Rect, 0xf6f6f6);
   Display::drawString("Hello world", Point(Screen::Width / 2 - 11 * 10 / 2, Screen::Height / 2 - 18 / 2), true, 0x414041, 0xf6f6f6);
+  // Display::drawString(ExternalData::data(), Point(0, 0), true, 0x414041, 0xf6f6f6);
 
   Keyboard::State keyState;
 
